@@ -1,0 +1,6 @@
+{
+  "name": "POPCORN - Pipoca Artesanal Conceição de Jacareí",
+  "description": "BioSite oficial da POPCORN em Conceição de Jacareí - RJ. Pipoca salgada na manteiga com bacon e calabresa, doce caramelizada, coberturas Fini e pedidos no WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

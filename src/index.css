@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatGentleOpposite {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-1.5deg);
+  }
+}
+
+@keyframes sheenGlide {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  50%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+.animate-float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.animate-float-opposite {
+  animation: floatGentleOpposite 6s ease-in-out infinite;
+}
+
+.animate-sheen {
+  animation: sheenGlide 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* 3D button press tactile feel */
+.btn-3d-yellow {
+  background: linear-gradient(180deg, #FDE047 0%, #EAB308 100%);
+  box-shadow: 0 5px 0 #A16207, 0 10px 20px rgba(0,0,0,0.5);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-3d-yellow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #A16207, 0 14px 24px rgba(250,204,21,0.25);
+}
+.btn-3d-yellow:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #A16207, 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.btn-3d-red {
+  background: linear-gradient(180deg, #EF4444 0%, #DC2626 100%);
+  box-shadow: 0 5px 0 #991B1B, 0 10px 20px rgba(220,38,38,0.3);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-3d-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #991B1B, 0 14px 24px rgba(239,68,68,0.35);
+}
+.btn-3d-red:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #991B1B, 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.btn-3d-dark {
+  background: linear-gradient(180deg, #27272a 0%, #18181b 100%);
+  box-shadow: 0 4px 0 #09090b, 0 8px 16px rgba(0,0,0,0.6);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-3d-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #09090b, 0 12px 20px rgba(0,0,0,0.7);
+}
+.btn-3d-dark:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #09090b, 0 4px 6px rgba(0,0,0,0.5);
+}
+
